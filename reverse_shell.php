@@ -1,10 +1,10 @@
 <?php
-if(!$_GET['ip']) {
+if(!isset($_GET['ip'])) {
     $ip = '127.0.0.1';
 }else{
     $ip = $_GET['ip'];
 }
-if(!$_GET['port']) {
+if(!isset($_GET['port'])) {
     $port = '443';
 }else{
     $port = $_GET['port'];
